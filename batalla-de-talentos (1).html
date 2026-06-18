@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Batalla de Talentos – SENA 2024</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ══ BOTÓN HAMBURGUESA (móvil) ══ -->
+<button class="sidebar-toggler" id="sidebarToggler" aria-label="Abrir menú">☰</button>
+
+<!-- ══ SIDEBAR IZQUIERDO ══ -->
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-brand">Batalla <span>de</span> Talentos</div>
+  <nav class="sidebar-nav">
+    <a class="nav-link nc" href="#evento"><span class="dot"></span><span data-i18n="nav-evento">El Evento</span></a>
+    <a class="nav-link nd" href="#artes"><span class="dot"></span><span data-i18n="nav-artes">Las Artes</span></a>
+    <a class="nav-link nc" href="#cuentos"><span class="dot"></span><span data-i18n="nav-cuentos">Cuentos</span></a>
+    <a class="nav-link nd" href="#baile"><span class="dot"></span><span data-i18n="nav-baile">Danza</span></a>
+    <a class="nav-link np" href="#pintura"><span class="dot"></span><span data-i18n="nav-pintura">Pintura</span></a>
+    <a class="nav-link nc" href="#actuacion"><span class="dot"></span><span data-i18n="nav-actuacion">Actuación</span></a>
+    <a class="nav-link np" href="#galeria"><span class="dot"></span><span data-i18n="nav-galeria">Galería</span></a>
+    <a class="nav-link nc" href="#autor"><span class="dot"></span><span data-i18n="nav-autor">Autor</span></a>
+  </nav>
+  <button class="lang-btn" id="langBtn" title="Switch language">
+    <span class="lang-flag">🇨🇴</span>
+    <span class="lang-label" id="langLabel">ES</span>
+  </button>
+</aside>
+
+<!-- ══ HERO ══ -->
+<section class="hero">
+  <div class="hero-blob blob-1"></div>
+  <div class="hero-blob blob-2"></div>
+  <div class="hero-blob blob-3"></div>
+  <div class="hero-blob blob-4"></div>
+  <div class="hero-inner container-xl px-3">
+    <div class="hero-badges d-flex flex-wrap justify-content-center gap-2 mb-4">
+      <span class="badge-art ba-actuacion">🎭 <span data-i18n="badge-actuacion">Actuación</span></span>
+      <span class="badge-art ba-danza">💃 <span data-i18n="badge-danza">Danza</span></span>
+      <span class="badge-art ba-pintura">🎨 <span data-i18n="badge-pintura">Pintura</span></span>
+      <span class="badge-art ba-cuento">📖 <span data-i18n="badge-cuento">Cuento</span></span>
+    </div>
+    <h1 class="hero-title mb-3">
+      <span class="ht-batalla d-block" data-i18n="hero-batalla">BATALLA</span>
+      <span class="ht-de d-block" data-i18n="hero-de">de</span>
+      <span class="ht-talentos d-block" data-i18n="hero-talentos">TALENTOS</span>
+    </h1>
+    <p class="hero-sub mx-auto mb-4" style="max-width:560px;" data-i18n="hero-sub">
+      Cuatro artes, una sola noche, un auditorio que no olvidará jamás.
+    </p>
+    <div class="d-flex justify-content-center gap-4 gap-md-5 flex-wrap mb-4">
+      <div class="stat text-center">
+        <div class="stat-num text-canto">4</div>
+        <div class="stat-label" data-i18n="stat-disciplinas">Disciplinas</div>
+      </div>
+      <div class="stat text-center">
+        <div class="stat-num text-danza">10+</div>
+        <div class="stat-label" data-i18n="stat-participantes">Participantes</div>
+      </div>
+      <div class="stat text-center">
+        <div class="stat-num text-cuento">2024</div>
+        <div class="stat-label">SENA</div>
+      </div>
+    </div>
+    <a href="#evento" class="btn-hero" data-i18n="btn-explorar">Explorar el evento</a>
+  </div>
+</section>
+
+<!-- ══ EVENTO ══ -->
+<section id="evento" class="bg-evento py-5 py-lg-6">
+  <div class="container-xl px-3 px-md-4 py-3">
+    <div class="stripe-wrap stripe-actuacion">
+      <div class="stripe-bar"></div>
+      <div class="flex-grow-1 min-w-0">
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-12 col-md-6">
+            <p class="sec-label text-actuacion mb-1" data-i18n="evento-label">¿Qué es?</p>
+            <h2 class="sec-title mb-3" data-i18n="evento-title">Un escenario<br><em class="text-actuacion">para brillar</em></h2>
+            <p class="text-tinta lh-lg mb-3" data-i18n="evento-p1">La <strong class="text-papel">Batalla de Talentos</strong> es el encuentro donde aprendices del SENA demuestran que el arte no tiene límites.</p>
+            <p class="text-tinta lh-lg mb-0" data-i18n="evento-p2">Canto, danza, pintura y cuento se tomaron el auditorio en una noche donde la culture colombiana brilló en toda su expresión.</p>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="about-img-wrap">
+             <img src="img/SENA.jpeg" alt="SENA" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="art-sep"></div>
+
+<!-- ══ LAS 4 ARTES ══ -->
+<section id="artes" class="bg-artes py-5 py-lg-6">
+  <div class="container-xl px-3 px-md-4 py-3">
+    <div class="stripe-wrap stripe-danza">
+      <div class="stripe-bar"></div>
+      <div class="flex-grow-1 min-w-0">
+        <p class="sec-label text-danza mb-1" data-i18n="artes-label">Categorías</p>
+        <h2 class="sec-title mb-4" data-i18n="artes-title">Las cuatro <em class="text-danza">artes</em></h2>
+        <div class="row g-3">
+          <div class="col-6 col-lg-3">
+            <div class="arte-card ac-actuacion">
+              <span class="arte-icon">🎭</span>
+              <h3 class="text-actuacion" data-i18n="arte-actuacion-h">Actuación</h3>
+              <p data-i18n="arte-ac-p">Teatro — en vivo, frente a una audiencia, sin posibilidad de repetir la toma. Exige.</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="arte-card ac-danza">
+              <span class="arte-icon">💃</span>
+              <h3 class="text-danza" data-i18n="arte-danza-h">Danza</h3>
+              <p data-i18n="arte-danza-p">Cuerpos en movimiento que cuentan historias sin palabras, con faldas que giran.</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="arte-card ac-pintura">
+              <span class="arte-icon">🎨</span>
+              <h3 class="text-pintura" data-i18n="arte-pintura-h">Pintura</h3>
+              <p data-i18n="arte-pintura-p">Colores y trazos que capturan la esencia de un momento en el lienzo.</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div class="arte-card ac-cuento">
+              <span class="arte-icon">📖</span>
+              <h3 class="text-cuento" data-i18n="arte-cuento-h">Cuento</h3>
+              <p data-i18n="arte-cuento-p">Palabras narradas con pasión que viajan desde lo cósmico hasta lo humano.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="art-sep"></div>
+
+<!-- ══ CUENTOS ══ -->
+<section id="cuentos" class="bg-cuentos py-5 py-lg-6">
+  <div class="container-xl px-3 px-md-4 py-3">
+    <div class="stripe-wrap stripe-cuento">
+      <div class="stripe-bar"></div>
+      <div class="flex-grow-1 min-w-0">
+        <p class="sec-label text-cuento mb-1" data-i18n="cuentos-label">Competencia</p>
+        <h2 class="sec-title mb-4" data-i18n="cuentos-title">Los <em class="text-cuento">Cuentos</em></h2>
+        <div class="row g-3">
+          <div class="col-12 col-md-6">
+            <div class="cuento-card h-100">
+          
+              <video controls>
+                <source src="video/cuervo1 (2).mp4" type="video/mp4" width="460">
+              </video>
+              <div class="p-3">
+                <div class="cuento-tag mb-1" data-i18n="c1-tag">🪐 Ciencia ficción</div>
+                <h3 class="mb-2" data-i18n="c1-title">El Planeta de los Ex</h3>
+                <p data-i18n="c1-p">En un rincón olvidado del universo existe un planeta habitado únicamente por quienes alguna vez amaron y perdieron.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="cuento-card h-100">
+              <img src="img/luz.jpeg" alt="La estrella que dio su luz" /><br><br><br>
+              <div class="p-3">
+                <div class="cuento-tag mb-1" data-i18n="c2-tag">⭐ Fábula</div>
+                <h3 class="mb-2" data-i18n="c2-title">La Estrella que Dio su Luz</h3>
+                <p data-i18n="c2-p">Una estrella que decidió apagarse para que los demás pudieran ver. Su sacrificio iluminó caminos para siempre.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="art-sep"></div>
+
+<!-- ══ BAILE / DANZA ══ -->
+<section id="baile" class="bg-baile py-5 py-lg-6">
+  <div class="container-xl px-3 px-md-4 py-3">
+    <div class="stripe-wrap stripe-danza">
+      <div class="stripe-bar"></div>
+      <div class="flex-grow-1 min-w-0">
+        <p class="sec-label text-danza mb-1" data-i18n="baile-label">Competencia</p>
+        <h2 class="sec-title mb-3" data-i18n="baile-title">La <em class="text-danza">Danza</em></h2>
+        <p class="text-tinta lh-lg mb-3" data-i18n="baile-p">Faldas rosadas que giraron bajo las luces de colores, cuerpos que narraron la identidad colombiana sin pronunciar una sola palabra.</p>
+        <div class="d-flex flex-wrap gap-2 mb-4">
+          <span class="tag-art" data-i18n="baile-tag1">🎶 Música en vivo</span>
+          <span class="tag-art" data-i18n="baile-tag2">👗 Trajes típicos</span>
+          <span class="tag-art" data-i18n="baile-tag3">🇨🇴 Folclor colombiano</span>
+        </div>
+        <div class="baile-mosaic">
+          <img src="img/danza.jpeg" alt="Baile folclórico principal" />
+          <img src="img/danza1.jpeg" alt="Grupo de baile" />
+          <img src="img/danza2.jpeg" alt="Detalle de faldas" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="art-sep"></div>
+
+<!-- ══ PINTURA ══ -->
+<section id="pintura" class="bg-pintura py-5 py-lg-6">
+  <div class="container-xl px-3 px-md-4 py-3">
+    <div class="stripe-wrap stripe-pintura">
+      <div class="stripe-bar"></div>
+      <div class="flex-grow-1 min-w-0">
+        <p class="sec-label text-pintura mb-1" data-i18n="pintura-label">Competencia</p>
+        <h2 class="sec-title mb-3" data-i18n="pintura-title">La <em class="text-pintura">Pintura</em></h2>
+        <p class="text-tinta lh-lg mb-3" data-i18n="pintura-p">Pinceles que tradujeron emociones en colores, lienzos que guardaron para siempre la esencia de una noche irrepetible.</p>
+        <div class="d-flex flex-wrap gap-2 mb-4">
+          <span class="tag-art" data-i18n="pintura-tag1">🎨 Arte en vivo</span>
+          <span class="tag-art" data-i18n="pintura-tag2">🖌️ Técnica libre</span>
+          <span class="tag-art" data-i18n="pintura-tag3">🇨🇴 Expresión colombiana</span>
+        </div>
+        <div class="baile-mosaic">
+          <video controls style="margin-top:1rem;max-width:560px;border-radius:12px;overflow:hidden;">
+            <source src="video/joshua.mp4" type="video/mp4">
+          </video>
+          <img src="img/afro.jpeg"  alt="Pintura principal" />
+          <img src="img/bogota.jpeg" alt="Detalle de pintura" />
+    
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="art-sep"></div>
+
+<!-- ══ ACTUACIÓN ══ -->
+<section id="actuacion" class="bg-canto py-5 py-lg-6">
+  <div class="container-xl px-3 px-md-4 py-3">
+    <div class="stripe-wrap stripe-canto">
+      <div class="stripe-bar"></div>
+      <div class="flex-grow-1 min-w-0">
+        <p class="sec-label text-canto mb-1" data-i18n="actuacion-label">Competencia</p>
+        <h2 class="sec-title mb-3" data-i18n="actuacion-title">La <em class="text-canto">Actuación</em></h2>
+        <p class="text-tinta lh-lg mb-3" data-i18n="actuacion-p">Cuerpo, voz y emoción al servicio de un personaje. Los aprendices del SENA tomaron el escenario y convirtieron cada palabra en una experiencia que el auditorio no olvidará.</p>
+        <div class="d-flex flex-wrap gap-2 mb-4">
+          <span class="tag-art" data-i18n="actuacion-tag1">🎭 Teatro en vivo</span>
+          <span class="tag-art" data-i18n="actuacion-tag2">🎬 Interpretación original</span>
+          <span class="tag-art" data-i18n="actuacion-tag3">🇨🇴 Expresión colombiana</span>
+          <video controls style="margin-top:1rem;max-width:720px;border-radius:12px;overflow:hidden;">
+            <source src="video/actuacion.mp4" type="video/mp4">
+          </video>
+          <video controls style="margin-top:1rem;max-width:560px;border-radius:12px;overflow:hidden;">
+            <source src="video/actuacion1.mp4" type="video/mp4">  
+          </video>
+          <video controls style="margin-top:1rem;max-width:560px  ;border-radius:12px;overflow:hidden;">
+            <source src="video/actuacion2.mp4" type="video/mp4">
+        </div>
+        <!-- VIDEO: pega el link de YouTube en src, o cambia por <video> si es archivo local -->
+        <div class="ratio ratio-16x9 mt-2" style="max-width:560px;border-radius:12px;overflow:hidden;">
+          <iframe
+            id="video-actuacion"
+            src=""
+            title="Actuación – Batalla de Talentos"
+            allowfullscreen
+            style="border:none;">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="art-sep"></div>
+
+<!-- ══ GALERÍA ══ -->
+<section id="galeria" class="bg-galeria py-5 py-lg-6">
+  <div class="container-xl px-3 px-md-4 py-3 mb-4">
+    <div class="stripe-wrap stripe-pintura">
+      <div class="stripe-bar"></div>
+      <div class="flex-grow-1">
+        <p class="sec-label text-pintura mb-1" data-i18n="galeria-label">Momentos</p>
+        <h2 class="sec-title" data-i18n="galeria-title">La <em class="text-pintura">Galería</em></h2>
+        <img src="img/luz.jpeg" alt="Luz" width="460"  />
+        <img src="img/danza.jpeg" alt="Danza" width="460" />
+        <img src="img/afro.jpeg" alt="Pintura Afro" width="460" />
+        <img src="img/bogota.jpeg" alt="Pintura Bogotá" width="460" />
+        <img src="img/SENA.jpeg" alt="SENA" width="460" />
+        <img src="img/danza1.jpeg" alt="Danza grupo" width="460" />
+
+        <video controls style="margin-top:1rem;max-width:560px;border-radius:12px;overflow:hidden;">
+          <source src="video/joshua.mp4" type="video/mp4">
+        </video>
+
+        <video controls style="margin-top:1rem;max-width:560px;border-radius:12px;overflow:hidden;">
+          <source src="video/actuacion.mp4" type="video/mp4">
+        </video>
+
+        <video controls style="margin-top:1rem;max-width:560px;border-radius:12px;overflow:hidden;">
+          <source src="video/actuacion1.mp4" type="video/mp4">
+        </video>
+
+        <video controls style="margin-top:1rem;max-width:560px;border-radius:12px;overflow:hidden;">
+          <source src="video/actuacion2.mp4" type="video/mp4" width="460">
+        </video>
+        
+      </div>
+    </div>
+  </div>
+  <div class="galeria-grid px-2 px-md-4" id="galeria-grid" style="max-width:1400px;margin:0 auto;"></div>
+</section>
+
+<div class="art-sep"></div>
+
+<!-- ══ AUTOR ══ -->
+<section id="autor" class="bg-autor py-5 py-lg-6 text-center">
+  <div class="container-xl px-3">
+    <div class="mx-auto" style="max-width:580px;">
+      <div class="autor-palette mb-3">
+        <div class="ap" style="background:var(--canto)"></div>
+        <div class="ap" style="background:var(--danza)"></div>
+        <div class="ap" style="background:var(--pintura)"></div>
+        <div class="ap" style="background:var(--cuento)"></div>
+      </div>
+      <div class="autor-badge mb-4" data-i18n="autor-badge">Cronista del evento</div>
+      <h2 class="autor-name mb-1">KEVIN SANTIAGO<br>MOSQUERA PEREA</h2>
+      <p class="text-canto mb-4" style="font-size:.82rem;letter-spacing:.15em;text-transform:uppercase;">SENA · Batalla de Talentos 2024</p>
+      <p class="text-tinta lh-lg mb-4" data-i18n="autor-p">Testigo y narrador de una noche donde el talento colombiano demostró que el arte vive, respira y transforma. Esta página es su memoria digital.</p>
+      <div class="autor-sep">
+        <span class="as-line" style="background:var(--canto)"></span>
+        <em class="font-display-italic text-tinta" style="font-size:.85rem;">SENA · 2024</em>
+        <span class="as-line" style="background:var(--danza)"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer class="site-footer py-4">
+  <div class="container-xl px-3 px-md-4 d-flex align-items-center justify-content-between flex-wrap gap-3">
+    <span class="footer-logo">Batalla de Talentos</span>
+    <div class="d-flex gap-2">
+      <span class="footer-dot" style="background:var(--canto);opacity:.6"></span>
+      <span class="footer-dot" style="background:var(--danza);opacity:.6"></span>
+      <span class="footer-dot" style="background:var(--pintura);opacity:.6"></span>
+      <span class="footer-dot" style="background:var(--cuento);opacity:.6"></span>
+    </div>
+    <span style="font-size:.7rem;color:rgba(232,224,213,.2);letter-spacing:.08em;">SENA 2024 · Juan Sebastián Rojas Guiza</span>
+  </div>
+</footer>
+
+<!-- ══ LIGHTBOX ══ -->
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" id="lb-close">✕</button>
+  <button class="lb-nav lb-prev" id="lb-prev">‹</button>
+  <img id="lb-img" src="" alt="" />
+  <button class="lb-nav lb-next" id="lb-next">›</button>
+</div>
+
+<script src="scripts.js"></script>
+<script>
+  const toggler = document.getElementById('sidebarToggler');
+  const sidebar = document.getElementById('sidebar');
+  toggler.addEventListener('click', () => sidebar.classList.toggle('open'));
+  sidebar.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => sidebar.classList.remove('open'));
+  });
+
+  const translations = {
+    es: {
+      'nav-evento':    'El Evento',
+      'nav-artes':     'Las Artes',
+      'nav-cuentos':   'Cuentos',
+      'nav-baile':     'Danza',
+      'nav-pintura':   'Pintura',
+      'nav-actuacion': 'Actuación',
+      'nav-galeria':   'Galería',
+      'nav-autor':     'Autor',
+      'badge-canto':   'Canto',
+      'badge-danza':   'Danza',
+      'badge-pintura': 'Pintura',
+      'badge-cuento':  'Cuento',
+      'hero-batalla':  'BATALLA',
+      'hero-de':       'de',
+      'hero-talentos': 'TALENTOS',
+      'hero-sub':      'Cuatro artes, una sola noche, un auditorio que no olvidará jamás.',
+      'stat-disciplinas':   'Disciplinas',
+      'stat-participantes': 'Participantes',
+      'btn-explorar':  'Explorar el evento',
+      'evento-label':  '¿Qué es?',
+      'evento-title':  'Un escenario<br><em class="text-canto">para brillar</em>',
+      'evento-p1':     'La <strong class="text-papel">Batalla de Talentos</strong> es el encuentro donde aprendices del SENA demuestran que el arte no tiene límites.',
+      'evento-p2':     'Canto, danza, pintura y cuento se tomaron el auditorio en una noche donde la cultura colombiana brilló en toda su expresión.',
+      'artes-label':   'Categorías',
+      'artes-title':   'Las cuatro <em class="text-danza">artes</em>',
+      'arte-canto-h':  'Canto',
+      'arte-canto-p':  'Voces que nacen del alma y llenan el auditorio de melodía y emoción.',
+      'arte-danza-h':  'Danza',
+      'arte-danza-p':  'Cuerpos en movimiento que cuentan historias sin palabras, con faldas que giran.',
+      'arte-pintura-h':'Pintura',
+      'arte-pintura-p':'Colores y trazos que capturan la esencia de un momento en el lienzo.',
+      'arte-cuento-h': 'Cuento',
+      'arte-cuento-p': 'Palabras narradas con pasión que viajan desde lo cósmico hasta lo humano.',
+      'cuentos-label': 'Competencia',
+      'cuentos-title': 'Los <em class="text-cuento">Cuentos</em>',
+      'c1-tag':   '🪐 Ciencia ficción',
+      'c1-title': 'El Planeta de los Ex',
+      'c1-p':     'En un rincón olvidado del universo existe un planeta habitado únicamente por quienes alguna vez amaron y perdieron.',
+      'c2-tag':   '⭐ Fábula',
+      'c2-title': 'La Estrella que Dio su Luz',
+      'c2-p':     'Una estrella que decidió apagarse para que los demás pudieran ver. Su sacrificio iluminó caminos para siempre.',
+      'baile-label': 'Competencia',
+      'baile-title': 'La <em class="text-danza">Danza</em>',
+      'baile-p':     'Faldas rosadas que giraron bajo las luces de colores, cuerpos que narraron la identidad colombiana sin pronunciar una sola palabra.',
+      'baile-tag1':  '🎶 Música en vivo',
+      'baile-tag2':  '👗 Trajes típicos',
+      'baile-tag3':  '🇨🇴 Folclor colombiano',
+      'pintura-label': 'Competencia',
+      'pintura-title': 'La <em class="text-pintura">Pintura</em>',
+      'pintura-p':     'Pinceles que tradujeron emociones en colores, lienzos que guardaron para siempre la esencia de una noche irrepetible.',
+      'pintura-tag1':  '🎨 Arte en vivo',
+      'pintura-tag2':  '🖌️ Técnica libre',
+      'pintura-tag3':  '🇨🇴 Expresión colombiana',
+      'actuacion-label':  'Competencia',
+      'actuacion-title':  'La <em class="text-canto">Actuación</em>',
+      'actuacion-p':      'Cuerpo, voz y emoción al servicio de un personaje. Los aprendices del SENA tomaron el escenario y convirtieron cada palabra en una experiencia que el auditorio no olvidará.',
+      'actuacion-tag1':   '🎭 Teatro en vivo',
+      'actuacion-tag2':   '🎬 Interpretación original',
+      'actuacion-tag3':   '🇨🇴 Expresión colombiana',
+      'galeria-label': 'Momentos',
+      'galeria-title': 'La <em class="text-pintura">Galería</em>',
+      'autor-badge':   'Cronista del evento',
+      'autor-p':       'Testigo y narrador de una noche donde el talento colombiano demostró que el arte vive, respira y transforma. Esta página es su memoria digital.',
+    },
+    en: {
+      'nav-evento':    'The Event',
+      'nav-artes':     'The Arts',
+      'nav-cuentos':   'Stories',
+      'nav-baile':     'Dance',
+      'nav-pintura':   'Painting',
+      'nav-actuacion': 'Acting',
+      'nav-galeria':   'Gallery',
+      'nav-autor':     'Author',
+      'badge-canto':   'Singing',
+      'badge-danza':   'Dance',
+      'badge-pintura': 'Painting',
+      'badge-cuento':  'Story',
+      'hero-batalla':  'BATTLE',
+      'hero-de':       'of',
+      'hero-talentos': 'TALENTS',
+      'hero-sub':      'Four arts, one night, an audience that will never forget.',
+      'stat-disciplinas':   'Disciplines',
+      'stat-participantes': 'Participants',
+      'btn-explorar':  'Explore the event',
+      'evento-label':  'What is it?',
+      'evento-title':  'A stage<br><em class="text-canto">to shine</em>',
+      'evento-p1':     'The <strong class="text-papel">Battle of Talents</strong> is the gathering where SENA apprentices prove that art has no limits.',
+      'evento-p2':     'Singing, dance, painting and storytelling took over the auditorium in a night where Colombian culture shone in full expression.',
+      'artes-label':   'Categories',
+      'artes-title':   'The four <em class="text-danza">arts</em>',
+      'arte-canto-h':  'Singing',
+      'arte-canto-p':  'Voices born from the soul that fill the auditorium with melody and emotion.',
+      'arte-danza-h':  'Dance',
+      'arte-danza-p':  'Bodies in motion telling stories without words, with swirling skirts.',
+      'arte-pintura-h':'Painting',
+      'arte-pintura-p':'Colors and strokes that capture the essence of a moment on canvas.',
+      'arte-cuento-h': 'Story',
+      'arte-cuento-p': 'Words narrated with passion that travel from the cosmic to the human.',
+      'cuentos-label': 'Competition',
+      'cuentos-title': 'The <em class="text-cuento">Stories</em>',
+      'c1-tag':   '🪐 Science fiction',
+      'c1-title': 'The Planet of Exes',
+      'c1-p':     'In a forgotten corner of the universe exists a planet inhabited only by those who once loved and lost.',
+      'c2-tag':   '⭐ Fable',
+      'c2-title': 'The Star That Gave Its Light',
+      'c2-p':     'A star that decided to go out so others could see. Its sacrifice lit paths forever.',
+      'baile-label': 'Competition',
+      'baile-title': 'The <em class="text-danza">Dance</em>',
+      'baile-p':     'Pink skirts swirling under colored lights, bodies narrating Colombian identity without uttering a single word.',
+      'baile-tag1':  '🎶 Live music',
+      'baile-tag2':  '👗 Traditional costumes',
+      'baile-tag3':  '🇨🇴 Colombian folklore',
+      'pintura-label': 'Competition',
+      'pintura-title': 'The <em class="text-pintura">Painting</em>',
+      'pintura-p':     'Brushes that translated emotions into colors, canvases that preserved forever the essence of an unforgettable night.',
+      'pintura-tag1':  '🎨 Live art',
+      'pintura-tag2':  '🖌️ Free technique',
+      'pintura-tag3':  '🇨🇴 Colombian expression',
+      'actuacion-label':  'Competition',
+      'actuacion-title':  'The <em class="text-canto">Acting</em>',
+      'actuacion-p':      'Body, voice and emotion in service of a character. SENA apprentices took the stage and turned every word into an experience the audience will never forget.',
+      'actuacion-tag1':   '🎭 Live theater',
+      'actuacion-tag2':   '🎬 Original performance',
+      'actuacion-tag3':   '🇨🇴 Colombian expression',
+      'galeria-label': 'Moments',
+      'galeria-title': 'The <em class="text-pintura">Gallery</em>',
+      'autor-badge':   'Event chronicler',
+      'autor-p':       'Witness and narrator of a night where Colombian talent proved that art lives, breathes and transforms. This page is its digital memory.',
+    }
+  };
+
+  let currentLang = 'es';
+
+  function applyLanguage(lang) {
+    const t = translations[lang];
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (t[key] !== undefined) el.innerHTML = t[key];
+    });
+    const btn = document.getElementById('langBtn');
+    if (lang === 'es') {
+      btn.querySelector('.lang-flag').textContent = '🇨🇴';
+      btn.querySelector('.lang-label').textContent = 'ES';
+      document.documentElement.lang = 'es';
+    } else {
+      btn.querySelector('.lang-flag').textContent = '🇺🇸';
+      btn.querySelector('.lang-label').textContent = 'IN';
+      document.documentElement.lang = 'en';
+    }
+  }
+
+  document.getElementById('langBtn').addEventListener('click', () => {
+    currentLang = currentLang === 'es' ? 'en' : 'es';
+    applyLanguage(currentLang);
+  });
+
+  applyLanguage('es');
+</script>
+</body>
+</html>
